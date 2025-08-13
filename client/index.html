@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Encuesta en Vivo (Sí/No)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Encuesta en vivo: ¿Estás de acuerdo?</h1>
+    <div id="auth-area">
+      <!-- Se completa desde app.js -->
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Pregunta fija</h2>
+      <p class="question">¿Apruebas esta propuesta?</p>
+
+      <div id="vote-area" class="vote-area hidden">
+        <button id="btn-yes">Sí 👍</button>
+        <button id="btn-no">No 👎</button>
+        <p id="your-vote" class="muted"></p>
+      </div>
+
+      <div class="results">
+        <div class="bar">
+          <span>Sí</span>
+          <div class="bar-outer">
+            <div id="bar-yes" class="bar-inner" style="width:0%"></div>
+          </div>
+          <span id="p-yes">0%</span>
+        </div>
+        <div class="bar">
+          <span>No</span>
+          <div class="bar-outer">
+            <div id="bar-no" class="bar-inner" style="width:0%"></div>
+          </div>
+          <span id="p-no">0%</span>
+        </div>
+        <p class="muted" id="counters">Total votos: 0 (Sí: 0 | No: 0)</p>
+      </div>
+
+      <div id="messages" class="muted"></div>
+    </section>
+  </main>
+
+  <!-- Socket.IO client (servido por el backend) -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
