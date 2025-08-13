@@ -35,8 +35,8 @@ _Se evidencia que ya existe un usuario registrado_
 ![Imgur](https://i.imgur.com/HlzDVE3.png)
 
 
-_Se evidencia que ya existe un usuario registrado_
-![Imgur](https://i.imgur.com/HlzDVE3.png)
+_Como esta con Socket, se puede evidenciar en tiempo real los votos desde otro navegador_
+![Imgur](https://i.imgur.com/M4hDxJa.png)
 
 
 ### 3.1. Configuración inicial
