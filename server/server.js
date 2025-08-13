@@ -16,6 +16,7 @@ const server = http.createServer(app);
 const io = new IOServer(server);
 
 const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => console.log(`Listening on ${PORT}`));
 const BASE_URL = process.env.BASE_URL || `http://localhost:${PORT}`;
 const JWT_SECRET = process.env.JWT_SECRET || "dev_secret_change_me";
 const GITHUB_CLIENT_ID = process.env.GITHUB_CLIENT_ID;
