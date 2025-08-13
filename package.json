@@ -1,0 +1,9 @@
+{
+  "name": "encuesta-vivo-oauth-socket",
+  "private": true,
+  "workspaces": ["server"],
+  "scripts": {
+    "postinstall": "npm install --prefix server",
+    "start": "node server/server.js"
+  }
+}
